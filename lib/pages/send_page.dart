@@ -14,7 +14,9 @@ import 'package:localsend_app/widget/responsive_list_view.dart';
 import 'package:routerino/routerino.dart';
 
 class SendPage extends ConsumerStatefulWidget {
-  const SendPage({Key? key}) : super(key: key);
+  final String sessionId;
+
+  const SendPage({required this.sessionId});
 
   @override
   ConsumerState<SendPage> createState() => _SendPageState();
